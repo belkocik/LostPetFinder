@@ -24,6 +24,7 @@ type AuthStore = {
   accessToken: string | undefined;
   accessTokenData: TokenData | undefined;
   refreshToken: string | undefined;
+  isAuthorized: boolean;
 
   actions: {
     setAccessToken: (accessToken: string | undefined) => void;
@@ -39,6 +40,7 @@ export const useAuthStore = create<AuthStore>(set => ({
   accessToken: undefined,
   accessTokenData: undefined,
   refreshToken: undefined,
+  isAuthorized: false,
 
   actions: {
     setAccessToken: (accessToken: string | undefined) => {
@@ -53,6 +55,7 @@ export const useAuthStore = create<AuthStore>(set => ({
       set({
         accessToken,
         accessTokenData,
+        isAuthorized: !!accessToken,
       });
     },
     setRefreshToken: (refreshToken: string | undefined) =>
@@ -64,6 +67,7 @@ export const useAuthStore = create<AuthStore>(set => ({
         accessToken: undefined,
         accessTokenData: undefined,
         refreshToken: undefined,
+        isAuthorized: false,
       }),
   },
 }));
