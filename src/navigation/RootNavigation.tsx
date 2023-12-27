@@ -14,7 +14,8 @@ const RootNavigation = (_props: Props) => {
   return (
     <PaperProvider theme={appTheme}>
       <NavigationContainer>
-        {isAuthorized ? <TabsNavigation /> : <AuthStackScreen />}
+        {/* {isAuthorized ? <TabsNavigation /> : <AuthStackScreen />} */}
+        <TabsNavigation />
       </NavigationContainer>
     </PaperProvider>
   );

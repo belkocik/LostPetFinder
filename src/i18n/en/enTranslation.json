@@ -1,4 +1,6 @@
 {
   "loginHeader": "Login",
-  "email": "Email"
+  "email": "Email",
+  "homeHeading": "Home",
+  "search": "Search"
 }

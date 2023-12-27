@@ -1,5 +1,3 @@
-import './src/i18n/config';
-
 import React from 'react';
 import RootNavigation from '@/navigation/RootNavigation';
 
