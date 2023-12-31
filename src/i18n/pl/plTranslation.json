@@ -2,5 +2,9 @@
   "loginHeader": "Zaloguj się",
   "email": "Email",
   "homeHeading": "Strona główna",
-  "search": "Szukaj"
+  "search": "Szukaj",
+  "filter": "Filtruj",
+  "cats": "Koty",
+  "dogs": "Psy",
+  "all": "Wszystkie"
 }

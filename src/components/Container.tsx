@@ -1,12 +1,13 @@
 import React, {FC} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
+import {Surface} from 'react-native-paper';
 
 type ContainerProps = {
   children: React.ReactNode;
 };
 
 const Container: FC<ContainerProps> = ({children}) => {
-  return <View style={styles.container}>{children}</View>;
+  return <SafeAreaView style={styles.container}>{children}</SafeAreaView>;
 };
 
 const styles = StyleSheet.create({

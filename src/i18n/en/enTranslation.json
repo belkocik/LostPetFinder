@@ -2,5 +2,9 @@
   "loginHeader": "Login",
   "email": "Email",
   "homeHeading": "Home",
-  "search": "Search"
+  "search": "Search",
+  "filter": "Filter",
+  "cats": "Cats",
+  "dogs": "Dogs",
+  "all": "All"
 }
