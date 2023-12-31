@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
-import {Surface} from 'react-native-paper';
 
 type ContainerProps = {
   children: React.ReactNode;

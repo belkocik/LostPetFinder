@@ -16,6 +16,10 @@ const HomeHeader = (_props: Props) => {
     setActiveIconFilter(filterValue);
   };
 
+  const isActive = (filterValue: string) => {
+    return activeIconFilter === filterValue;
+  };
+
   return (
     <Surface style={styles.header}>
       <Searchbar
@@ -30,7 +34,7 @@ const HomeHeader = (_props: Props) => {
             <IconButton
               icon="all-inclusive"
               size={28}
-              mode={activeIconFilter === 'all' ? 'contained-tonal' : 'outlined'}
+              mode={isActive('all') ? 'contained-tonal' : 'outlined'}
               onPress={() => handleFilter('all')}
             />
             <Text>{t('all')}</Text>
@@ -39,7 +43,7 @@ const HomeHeader = (_props: Props) => {
             <IconButton
               icon="dog"
               size={28}
-              mode={activeIconFilter === 'dogs' ? 'contained-tonal' : 'outlined'}
+              mode={isActive('dogs') ? 'contained-tonal' : 'outlined'}
               onPress={() => handleFilter('dogs')}
             />
             <Text>{t('dogs')}</Text>
@@ -48,7 +52,7 @@ const HomeHeader = (_props: Props) => {
             <IconButton
               icon="cat"
               size={28}
-              mode={activeIconFilter === 'cats' ? 'contained-tonal' : 'outlined'}
+              mode={isActive('cats') ? 'contained-tonal' : 'outlined'}
               onPress={() => handleFilter('cats')}
             />
             <Text>{t('cats')}</Text>
@@ -76,6 +80,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     width: '100%',
+    gap: 16,
   },
   iconContainer: {
     flexDirection: 'column',
