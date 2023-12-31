@@ -71,11 +71,14 @@ const Listings = (props: Props) => {
         data={DATA}
         renderItem={({item}) => <ListingItem {...item} />}
         estimatedItemSize={200}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );
 };
 
-const styles = StyleSheet.create({container: {flex: 1, marginTop: 20}});
+const styles = StyleSheet.create({
+  container: {flex: 1, marginTop: 20},
+});
 
 export default Listings;
